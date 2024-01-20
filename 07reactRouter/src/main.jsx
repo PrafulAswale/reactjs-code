@@ -10,6 +10,7 @@ import {
 import Layout from "./Layout.jsx";
 import { About, Contact, Github, Home, User } from "./components/index.js";
 import { githubInfoLoader } from "./components/Github/Github.jsx";
+
 // const router = createBrowserRouter([
 //   {
 //     path: "/",
