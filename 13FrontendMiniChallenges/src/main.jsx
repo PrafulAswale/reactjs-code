@@ -3,8 +3,29 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-createRoot(document.getElementById('root')).render(
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Counter from "./pages/Counter.jsx";
+import Home from "./pages/Home.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/counter",
+        element: <Counter />,
+      },
+    ],
+  },
+]);
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <RouterProvider router={router} />
+  </StrictMode>
+);
