@@ -4,18 +4,26 @@ import Card from "../components/Card";
 function Home() {
   const challenges = [
     {
-      name: "Counter",
+      title: "Counter",
       path: "/counter",
     },
     {
-      name: "Image Gallery",
+      title: "Image Gallery",
       path: "/image-gallery",
+    },
+    {
+      title: "Accordion",
+      path: "/accordion",
+    },
+    {
+      title: "Guess the number",
+      path: "/Guess-the-number",
     },
   ];
   return (
-    <div className="max-w-full dark:bg-slate-900 grid">
+    <div className="grid gap-5 grid-cols-4 mt-8 mb-8">
       {challenges.map((ele) => (
-        <Card key={ele.name} name={ele.name} path={ele.path} />
+        <Card key={ele.title} title={ele.title} path={ele.path} />
       ))}
     </div>
   );
