@@ -13,7 +13,7 @@ function Home() {
     },
   ];
   return (
-    <div className="grid">
+    <div className="max-w-full dark:bg-slate-900 grid">
       {challenges.map((ele) => (
         <Card key={ele.name} name={ele.name} path={ele.path} />
       ))}
