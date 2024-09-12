@@ -24,7 +24,9 @@ function Header() {
         </div>
         <div className="float-end">
           <ThemeBtn />
-          <a href="www.github.com/prafulaswale">Source Code</a>
+          <a className="ml-2" href="www.github.com/prafulaswale">
+            Github
+          </a>
         </div>
       </nav>
     </ThemeProvider>
