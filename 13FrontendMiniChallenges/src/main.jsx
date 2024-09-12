@@ -6,6 +6,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Counter from "./pages/Counter.jsx";
 import Home from "./pages/Home.jsx";
+import ImageGallary from "./pages/ImageGallary.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/counter",
         element: <Counter />,
+      },
+      {
+        path: "/image-gallery",
+        element: <ImageGallary />,
       },
     ],
   },
