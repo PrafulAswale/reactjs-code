@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Counter from "./pages/Counter.jsx";
 import Home from "./pages/Home.jsx";
 import ImageGallary from "./pages/ImageGallary.jsx";
+import Accordion from "./pages/Accordion.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/image-gallery",
         element: <ImageGallary />,
+      },
+      {
+        path: "/accordion",
+        element: <Accordion />,
       },
     ],
   },
